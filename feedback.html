@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>问题反馈 - 图片编辑器</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>问题反馈</h1>
+            <nav>
+                <a href="index.html">返回首页</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <form id="feedback-form" class="feedback-form">
+            <div class="form-group">
+                <label for="type">问题类型</label>
+                <select id="type" required>
+                    <option value="bug">程序错误</option>
+                    <option value="feature">功能建议</option>
+                    <option value="other">其他</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">详细描述</label>
+                <textarea id="description" required 
+                    placeholder="请详细描述您遇到的问题或建议..."
+                    rows="6"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="contact">联系方式（选填）</label>
+                <input type="email" id="contact" 
+                    placeholder="您的邮箱，方便我们回复您">
+            </div>
+            <button type="submit">提交反馈</button>
+        </form>
+    </div>
+
+    <script src="assets/js/feedback.js"></script>
+</body>
+</html>

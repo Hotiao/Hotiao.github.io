@@ -1,0 +1,30 @@
+﻿.error-page {
+  text-align: center;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.error-page h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.error-page ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.error-page li {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.error-actions {
+  margin-top: 2rem;
+}
+
+.error-actions .btn {
+  margin: 0.5rem;
+}

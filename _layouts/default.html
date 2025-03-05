@@ -1,34 +1,24 @@
 ﻿<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% seo %}
   </head>
   <body>
-    <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      <nav class="site-nav">
-        <a href="{{ "/" | relative_url }}">首页</a>
-        <a href="{{ "/docs" | relative_url }}">文档</a>
-        <a href="{{ "/changelog" | relative_url }}">更新日志</a>
-        <a href="{{ "/feedback" | relative_url }}">反馈</a>
+    <header class="page-header">
+      <h1>{{ page.title }}</h1>
+      <p>{{ page.description }}</p>
+      <nav>
+        <a href="{{ '/' | relative_url }}">首页</a>
+        <a href="{{ '/docs.html' | relative_url }}">文档</a>
+        <a href="{{ '/feedback.html' | relative_url }}">反馈</a>
       </nav>
     </header>
-
-    <main id="content" class="main-content" role="main">
+    <main class="main-content">
       {{ content }}
-
-      <footer class="site-footer">
-        <span class="site-footer-owner">
-          <a href="{{ site.github.repository_url }}">{{ site.title }}</a> 由 
-          <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a> 维护
-        </span>
-      </footer>
     </main>
   </body>
 </html>

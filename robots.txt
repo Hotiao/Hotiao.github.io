@@ -1,0 +1,6 @@
+﻿User-agent: *
+Allow: /
+Sitemap: https://Hotiao.github.io/sitemap.xml
+
+Disallow: /assets/
+Disallow: /server/

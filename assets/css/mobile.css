@@ -1,0 +1,112 @@
+﻿@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .header {
+        padding: 1.5rem 0;
+    }
+    
+    .header nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    
+    .download-section {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .download-card {
+        padding: 1.5rem;
+    }
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .feedback-form {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px; /* 防止iOS自动缩放 */
+    }
+    
+    .version-block {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+    /* 表格横向滚动 */
+    .shortcuts-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #f0f0f0;
+    }
+    
+    .header,
+    .download-card,
+    .version-block,
+    .feedback-form {
+        background-color: #2d2d2d;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    .header nav a {
+        color: #66b3ff;
+    }
+    
+    .header nav a:hover {
+        background-color: #3d3d3d;
+    }
+    
+    .form-group label {
+        color: #ccc;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        background-color: #3d3d3d;
+        border-color: #4d4d4d;
+        color: #f0f0f0;
+    }
+    
+    .shortcuts-table th,
+    .shortcuts-table td {
+        border-color: #4d4d4d;
+    }
+    
+    .shortcuts-table th {
+        background-color: #2d2d2d;
+    }
+}
+
+/* 触摸设备优化 */
+@media (hover: none) {
+    .header nav a:hover {
+        background-color: transparent;
+    }
+    
+    button[type="submit"]:hover {
+        background-color: #007bff;
+    }
+    
+    button[type="submit"]:active {
+        background-color: #0056b3;
+    }
+}

@@ -1,8 +1,16 @@
-﻿remote_theme: pages-themes/cayman@v0.2.0
-plugins:
-- jekyll-remote-theme
-- jekyll-seo-tag
+﻿# 站点设置
 title: 图片编辑器
 description: 专业的跨平台图片编辑工具
-baseurl: ""
+baseurl: "/"
 url: "https://hotiao.github.io"
+
+# 主题设置
+theme: jekyll-theme-cayman
+
+# 插件配置
+plugins:
+  - jekyll-seo-tag
+
+# 构建设置
+markdown: kramdown
+encoding: utf-8
